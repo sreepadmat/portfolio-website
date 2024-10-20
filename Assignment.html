@@ -4,63 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
-        <h1>Hi, I'm Sreepadma</h1>
-        <p>Welcome to my portfolio website!</p>
-        <img src="sreeimage(1) (1) (1).jpg" alt="my image">
+    <section id="home" class="section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>SREE PADMA</span></h1>
+                <p>I'm a passionate developer. Welcome to my portfolio!</p>
+                <img src="sreeimage(1) (1) (1).jpg" alt="Your Photo" class="profile-img">
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A brief background about yourself, skills, and interests.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi! I’m Sree padma, a developer passionate about artificial intelligence and machine learning. I recently completed an internship at IBM, gaining hands-on experience in AI solutions.
+
+                With a background in computer science from Cochin University, I’m proficient in languages like Python and JavaScript. I love solving complex problems and enjoy collaborating with others to create innovative solutions.
+                
+                In my free time, I’m interested in music and painting. Feel free to connect or check out my projects!
+                
+                </p>
+        </div>
     </section>
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>Masters of Computer Applications</h3>
+                    <p>University of cochin, cochin, kerala | 2025</p>
+                    <p>Relevant Coursework: Data Structures, Machine Learning, Web Development</p>
+                </li>
+                <li>
+                    <h3>Bachelor of science in Physics</h3>
+                    <p>University of Calicut,calicut,kerala|2022</p>
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, JavaScript, Java</li>
+                <li>Web Development: HTML, CSS</li>
+                <li>Soft Skills: Problem-solving, Teamwork, Communication</li>
+            </ul>
+        </div>
+    </section>
+    
+    
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-            <a href="https://github.com/your-repo/project1" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="https://github.com/your-repo/project2" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
-            <a href="https://github.com/your-repo/project3" target="_blank">View Project</a>
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Details of project 1.</p>
+                    <a href="https://github.com/your-repo/project1" class="btn" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Details of project 2.</p>
+                    <a href="https://github.com/your-repo/project2" class="btn" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Details of project 3.</p>
+                    <a href="https://github.com/your-repo/project3" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <p id="thank-you-message" style="display:none;">Thank you for your message!</p>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <p id="thank-you-message" style="display:none;">Thank you for your message!</p>
+        </div>
     </section>
 
     <script src="script.js"></script>
